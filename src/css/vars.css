@@ -23,6 +23,8 @@
   --color-royalblue-10:#0065a4;
   --color-royalblue-20:#005082;
   --color-royalblue-30:#1d4b8f;
+  --color-light-blue-10:#F0F8FF;
+
   --color-misty-rose-10:#ffebee;
   --color-misty-rose-20:#e57373;
   --color-light-peach-10:#FFEBCC;
@@ -113,7 +115,7 @@
   --example-border-color: var(--color-light-peach-20);
   --kbd-background: var(--panel-background);
   --kbd-border-color: var(--color-gray-10);
-  --pre-background: var(--panel-background);
+  --pre-background: var(--color-light-blue-10);
   --pre-border-color: var(--panel-border-color);
   --pre-annotation-font-color: var(--color-gray-50);
   --quote-background: var(--panel-background);
