@@ -22,6 +22,60 @@ Quisque pharetra tristique arcu fringilla dapibus.
 https://example.org[Curabitur,role=unresolved] ut massa aliquam, cursus enim et, accumsan lectus.
 Mauris eget leo nunc, nec tempus mi? Curabitur id nisl mi, ut vulputate urna.
 
+== Defininf Component
+
+[source,fpp]
+----
+module Sensors {
+
+  @ A component for sensing engine temperature
+  passive component EngineTemp {
+
+    @ Schedule input port
+    sync input port schedIn: Svc.Sched
+
+    @ Telemetry port
+    telemetry port tlmOut
+
+    @ Time get port
+    time get port timeGetOut
+
+    @ Impulse engine temperature
+    telemetry ImpulseTemp: F32
+
+    @ Warp core temperature
+    telemetry WarpTemp: F32
+
+  }
+
+}
+
+module FSW {
+
+  @ Engine temperature instance
+  instance engineTemp: Sensors.EngineTemp base id 0x100
+
+}
+
+----
+
+[source,cpp]
+----
+#include <iostream>
+
+int main(int argc, char *argv[]) {
+
+  /* An annoying "Hello World" example */
+  for (auto i = 0; i < 0xFFFF; i++)
+    cout << "Hello, World!" << endl;
+
+  char c = '\n';
+  unordered_map <string, vector<string> > m;
+  m["key"] = "\\\\"; // this is an error
+
+  return -2e3 + 12l;
+}
+----
 == Cu solet
 
 Nominavi luptatum eos, an vim hinc philosophia intellegebat.
@@ -283,11 +337,17 @@ Don't forget this step!
 ====
 If you installed the CLI and the default site generator globally, you can upgrade both of them with the same command.
 
+[source,console]
+----
  $ npm i -g @antora/cli @antora/site-generator
+----
 
 Or you can install the metapackage to upgrade both packages at once.
 
+[source,console]
+----
  $ npm i -g antora
+----
 ====
 
 Nominavi luptatum eos, an vim hinc philosophia intellegebat.

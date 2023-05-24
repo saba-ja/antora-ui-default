@@ -51,7 +51,7 @@
 }
 
 .nav a {
-  color: inherit;
+  color: var(--nav-link-font-color);
 }
 
 .nav .panels {
@@ -149,6 +149,10 @@ html.is-clipped--nav {
 .is-current-page > .nav-link,
 .is-current-page > .nav-text {
   font-weight: var(--body-font-weight-bold);
+}
+
+.nav .nav-text {
+  color: var(--nav-link-font-color);
 }
 
 .nav-panel-explore {

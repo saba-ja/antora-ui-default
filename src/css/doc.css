@@ -29,6 +29,7 @@
   hyphens: none;
   line-height: 1.3;
   margin: 1rem 0 0;
+  font-family: var(--heading-font-family);
 }
 
 .doc > h1.page:first-child {
@@ -110,6 +111,7 @@
 
 .doc p,
 .doc dl {
+  font-family: var(--paragraph-font-family);
   margin: 0;
 }
 
@@ -410,6 +412,42 @@
   content: attr(title);
 }
 
+.doc .admonitionblock.tip .content{
+  background-color:#dcedc8;
+  border-radius: 0.5rem;
+  color: #004d00;
+  box-shadow: 0 0 0 #8bc34a, 0 0 0 0.05em #8bc34a inset;
+  font-family: var(--heading-font-family);
+}
+
+.doc .admonitionblock.note .content{
+  background-color:#dcedf5;
+  border-radius: 0.5rem;
+  color: #001f3f;
+  box-shadow: 0 0 0 #3399cc, 0 0 0 0.05em #3399cc inset;
+}
+
+.doc .admonitionblock.warning .content{
+  background-color:#ffe6cc;
+  border-radius: 0.5rem;
+  color: #8c2800;
+  box-shadow: 0 0 0 #ffaa00, 0 0 0 0.05em #ffaa00 inset;
+}
+
+.doc .admonitionblock.caution .content{
+  background-color:#e8d3f5;
+  border-radius: 0.5rem;
+  color: #2d004d;
+  box-shadow: 0 0 0 #af77dd, 0 0 0 0.05em #af77dd inset;
+}
+
+.doc .admonitionblock.important .content{
+  background-color:#ffd2d2;
+  border-radius: 0.5rem;
+  color: #5c0000;
+  box-shadow: 0 0 0 #ff4646, 0 0 0 0.05em #ff4646 inset;
+}
+
 .doc .imageblock,
 .doc .videoblock {
   display: flex;
@@ -700,8 +738,8 @@
 
 .doc .exampleblock > .content,
 .doc details.result > .content {
-  background: var(--example-background);
-  border: 0.25rem solid var(--example-border-color);
+  background:var(--example-background);
+  border: 1px solid var(--example-border-color);
   border-radius: 0.5rem;
   padding: 0.75rem;
 }
@@ -720,6 +758,7 @@
 
 .doc .sidebarblock {
   background: var(--sidebar-background);
+  border: 1px solid var(--sidebar-boarder);
   border-radius: 0.75rem;
   padding: 0.75rem 1.5rem;
 }

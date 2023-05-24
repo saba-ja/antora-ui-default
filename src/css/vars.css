@@ -1,22 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700');
+
 :root {
   /* colors */
-  --color-white: #fff;
-  --color-smoke-10: #fefefe;
-  --color-smoke-30: #fafafa;
-  --color-smoke-50: #f5f5f5;
-  --color-smoke-70: #f0f0f0;
-  --color-smoke-90: #e1e1e1;
-  --color-gray-10: #c1c1c1;
-  --color-gray-30: #9c9c9c;
-  --color-gray-40: #8e8e8e;
-  --color-gray-50: #808080;
-  --color-gray-70: #5d5d5d;
-  --color-jet-20: #4a4a4a;
-  --color-jet-30: #424242;
-  --color-jet-50: #333;
-  --color-jet-70: #222;
-  --color-jet-80: #191919;
-  --color-black: #000;
+   --color-white: #ffffff;
+  --color-smoke-10: #f9f9f9;
+  --color-smoke-30: #f3f3f3;
+  --color-smoke-50: #ebebeb;
+  --color-smoke-70: #e2e2e2;
+  --color-smoke-90: #d4d4d4;
+  --color-gray-10: #bdbdbd;
+  --color-gray-30: #9e9e9e;
+  --color-gray-40: #8a8a8a;
+  --color-gray-50: #757575;
+  --color-gray-70: #545454;
+  --color-jet-20: #333333;
+  --color-jet-30: #292929;
+  --color-jet-50: #1f1f1f;
+  --color-jet-70: #141414;
+  --color-jet-80: #0d0d0d;
+  --color-black: #000000;
+  --color-maroon-10:#ba3925;
+  --color-royalblue-10:#0065a4;
+  --color-royalblue-20:#005082;
+  --color-royalblue-30:#1d4b8f;
+  --color-misty-rose-10:#ffebee;
+  --color-misty-rose-20:#e57373;
+  --color-light-peach-10:#FFEBCC;
+  --color-light-peach-20:#FFC77D;
   /* fonts */
   --rem-base: 18; /* used to compute rem value from desired pixel value (e.g., calc(18 / var(--rem-base) * 1rem) = 18px) */
   --body-font-size: 1.0625em; /* 17px */
@@ -28,6 +38,8 @@
   --body-font-weight-bold: 500;
   --monospace-font-family: "Roboto Mono", monospace;
   --monospace-font-weight-bold: 500;
+  --heading-font-family: "Open Sans", "DejaVu Sans", sans-serif;
+  --paragraph-font-family: "Noto Serif","DejaVu Serif",serif;
   /* base */
   --body-background: var(--color-white);
   --panel-background: var(--color-smoke-30);
@@ -36,9 +48,9 @@
   --scrollbar-thumb-color: var(--color-gray-10);
   --scrollbar_hover-thumb-color: var(--color-gray-30);
   /* navbar */
-  --navbar-background: var(--color-jet-80);
+  --navbar-background:var(--color-royalblue-10);
   --navbar-font-color: var(--color-white);
-  --navbar_hover-background: var(--color-black);
+  --navbar_hover-background: var(--color-royalblue-20);
   --navbar-button-background: var(--color-white);
   --navbar-button-border-color: var(--panel-border-color);
   --navbar-button-font-color: var(--body-font-color);
@@ -50,10 +62,11 @@
   --nav-background: var(--panel-background);
   --nav-border-color: var(--color-gray-10);
   --nav-line-height: 1.35;
-  --nav-heading-font-color: var(--color-jet-30);
+  --nav-heading-font-color: var(--color-royalblue-30);
   --nav-muted-color: var(--color-gray-70);
   --nav-panel-divider-color: var(--color-smoke-90);
   --nav-secondary-background: var(--color-smoke-70);
+  --nav-link-font-color: var(--color-royalblue-30);
   /* toolbar */
   --toolbar-background: var(--panel-background);
   --toolbar-border-color: var(--panel-border-color);
@@ -79,7 +92,7 @@
   --doc-line-height: 1.6;
   --doc-margin: 0 auto;
   --doc-margin--desktop: 0 2rem;
-  --heading-font-color: var(--color-jet-80);
+  --heading-font-color: var(--color-maroon-10);
   --heading-font-weight: normal;
   --alt-heading-font-weight: var(--body-font-weight-bold);
   --section-divider-color: var(--panel-border-color);
@@ -96,8 +109,8 @@
   --caption-font-weight: var(--body-font-weight-bold);
   --code-background: var(--panel-background);
   --code-font-color: var(--body-font-color);
-  --example-background: var(--color-white);
-  --example-border-color: var(--color-gray-70);
+  --example-background: var(--color-light-peach-10);
+  --example-border-color: var(--color-light-peach-20);
   --kbd-background: var(--panel-background);
   --kbd-border-color: var(--color-gray-10);
   --pre-background: var(--panel-background);
@@ -107,7 +120,8 @@
   --quote-border-color: var(--color-gray-70);
   --quote-font-color: var(--color-gray-70);
   --quote-attribution-font-color: var(--color-gray-40);
-  --sidebar-background: var(--color-smoke-90);
+  --sidebar-background: var(--color-misty-rose-10);
+  --sidebar-boarder: var(--color-misty-rose-20);
   --table-border-color: var(--panel-border-color);
   --table-stripe-background: var(--panel-background);
   --table-footer-background: linear-gradient(to bottom, var(--color-smoke-70) 0%, var(--color-white) 100%);
